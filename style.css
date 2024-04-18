@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    border-bottom: 2px solid #EBEAED;
+    padding: 2rem 5rem;
+}
+.nav-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-name h1{
+    color: #1E0E62;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.menu-items{
+    display: flex;
+    gap: 20px;
+}
+.menu-items select{
+    color: #1E0E62;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    border: none;
+}
+.menu-items a{
+    text-decoration: none;
+    color: #1E0E62;
+    opacity: 0.3;
+}
+.menu-icons{
+    display: flex;
+    gap: 20px;
+}
+.menu-icons i{
+    color: #1E0E62;
+    font-size: 24px;
+}
+.search{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.search i {
+    font-size: 20px;
+}
+
+.hamburg{
+    display: none;
+}
+
+main{
+    padding: 1rem 5rem;
+    display: flex;
+    gap: 5rem;
+}
+.first-part{
+    width: 100%;
+    display: flex;
+    /* gap: 1rem; */
+    color: #1E0E62;
+    font-family: "DM Sans", sans-serif;
+}
+.second-part{
+    width: 30%;
+}
+.first-part img{
+    width: 100%;
+}
+.first-part h5{
+    font-size: 18px;
+}
+.category{
+    width: 450px;  
+    padding-top: 20px;
+}
+.category p {
+    color: #15143966;
+    padding: 7px 0;
+}
+#basic{
+    color: #1E0E62;
+    opacity: 1;
+}
+.top-box{
+    position: relative;
+}
+.top-items{
+    position: absolute;
+    top: 0;
+    padding: 2rem;
+
+}
+.top{
+    width: 350px;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 32px;
+}
+.shop{
+    width: 180px;
+    color: #ffffff;
+    opacity: 0.6;
+    padding-top: 1rem;
+    line-height: 25px;
+}
+.second-part h3{
+    color: #1E0E62;
+    padding-top: 10px;
+    font-family: 'DM Sans', sans-serif;
+}
+.items-box{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    /* font-size: 14px; */
+    padding: 10px 0;
+}
+
+.items-box h6{
+    color: #1E0E62;
+}
+.items-box p{
+    color: #15143966;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+
+    body{
+        width: 100%;
+    }
+
+    .menu-items{
+        display: none;
+    }
+
+    .menu-icons{
+        display: none;
+    }
+
+    .brand-name h1{
+        padding-right: 50px;
+    }
+
+    .hamburg{
+        display: flex;
+        padding-right: 150px;
+    }
+
+    main{
+        flex-direction: column;
+        padding: 1rem 2rem;
+        display: flex;
+        gap: 5rem;
+    }
+
+    .first-part{
+        flex-direction: column;
+        padding: none;
+    }
+
+    header{
+        padding: 2rem 2rem;
+    }
+
+    .top-box img{
+        position: relative;
+        height: 300px;
+        max-width: 200px;
+    }
+
+    .top{
+        width: 150px;
+        color: #ffffff;
+        font-family: 'DM Sans', sans-serif;
+        font-size: medium;
+    }
+
+    .shop{
+        width: 100px;
+        line-height: 20px;
+        font-size: small;
+    }
+
+    .second-part h3{
+        font-size: 25px;
+    }
+
+    .items-box img{
+        width: 100px;
+    }
+
+    .items-box h6{
+        font-size: 15px;
+    }
+
+    .items-box p{
+        line-height: 15px;
+        font-size: 10px;
+        color: #1E0E62;
+        opacity: 0.8;
+    }
+}
